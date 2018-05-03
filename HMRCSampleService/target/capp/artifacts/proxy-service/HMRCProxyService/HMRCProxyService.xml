@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="HMRCProxyService" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <log description="Received Request in Proxy Service" level="full"/>
+            <send>
+                <endpoint key="MockServiceEP"/>
+            </send>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+    <publishWSDL uri="http://localhost:8088/mockHMRCService?WSDL"/>
+</proxy>

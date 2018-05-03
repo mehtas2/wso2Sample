@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="MockEndpoint" xmlns="http://ws.apache.org/ns/synapse">
+    <address statistics="enable" trace="enable" uri="http://localhost:8088/mockHMRCService">
+        <timeout>
+            <responseAction>fault</responseAction>
+        </timeout>
+        <markForSuspension>
+            <retriesBeforeSuspension>2</retriesBeforeSuspension>
+            <retryDelay>10</retryDelay>
+        </markForSuspension>
+    </address>
+</endpoint>

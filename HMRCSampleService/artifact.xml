@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="QueryDoctorEP" groupId="com.example.HMRCSampleService.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/QueryDoctorEP.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI" groupId="com.example.HMRCSampleService.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareAPI.xml</file>
+    </artifact>
+    <artifact name="HMRCProxyService" groupId="com.example.HMRCSampleService.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/HMRCProxyService.xml</file>
+    </artifact>
+    <artifact name="MockEndpoint" groupId="com.example.HMRCSampleService.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/MockEndpoint.xml</file>
+    </artifact>
+</artifacts>
